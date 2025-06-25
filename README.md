@@ -26,8 +26,17 @@ To Know: CSV Catalogs
 * Columns: object ID, RA/Dec (position), magnitude in different filters, redshift, etc.
 
     
+Context
+The CEERS catalog contains flux measurements of celestial objects (stars, galaxies) across different wavelength bands (filters), like:
 
+    F435W → ~0.43 µm (blue)
+    F606W → ~0.60 µm (visible-red)
+    F814W → ~0.80 µm (near-infrared)
+These filters simulate how bright an object is at specific wavelengths — kind of like colored sunglasses.
    
+WHY???
+Stars and galaxies tend to emit light across many wavelengths in predictable patterns (like blackbody radiation or galaxy SEDs). This means:
+Fluxes across filters are correlated — and that’s perfect for regression models.
 
     
 
